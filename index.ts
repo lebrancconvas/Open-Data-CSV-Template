@@ -1,9 +1,10 @@
-import { convertCSVtoJSON } from "./libs";
+import { 
+  convertCSVtoJSON,
+  CSVtoJSONFile 
+} from "./libs";
 
 async function main() {
-  const result = await convertCSVtoJSON("example");
-  console.log(result);
+  await CSVtoJSONFile("example");
 };
-
 
 main();  
